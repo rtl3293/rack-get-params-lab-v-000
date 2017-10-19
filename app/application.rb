@@ -24,9 +24,9 @@ class Application
       end
     elsif req.path.match(/add/)
       item = req.params["item"]
-      binding.pry
+      
       if @@items.include?(item)
-
+        binding.pry
         @@cart << item
         resp.write "added #{item} to cart"
       else
