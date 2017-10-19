@@ -27,7 +27,7 @@ class Application
   end
 
   def handle_search(search_term)
-    if @@items.include?(search_term)
+    if @@items.include?(search_term.downcase)
       return "#{search_term} is one of our items"
     else
       return "Couldn't find #{search_term}"
