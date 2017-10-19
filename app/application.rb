@@ -26,7 +26,7 @@ class Application
       item = req.params["items"]
       binding.pry
       if @@items.include?(item)
-        
+
         @@cart << item
         resp.write "added #{item} to cart"
       else
