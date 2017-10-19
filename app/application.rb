@@ -28,6 +28,7 @@ class Application
         resp.write "added #{item} to cart"
       else
         resp.write "We don't have that item"
+      end
     else
       resp.write "Path Not Found"
     end
