@@ -23,7 +23,7 @@ class Application
         end
       end
     elsif req.path.match(/add/)
-      item = req.params["items"]
+      item = req.params["item"]
       binding.pry
       if @@items.include?(item)
 
